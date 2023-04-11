@@ -3,7 +3,7 @@
 </div>
 <div class="container">
   <div class="row">
-    <div class="col-md-4">
+    <div class="col-md-3">
       <% if @book.errors.any? %>
         <%= @book.errors.count %>errors prohibited this obj from being saved:
         <ul>
@@ -15,7 +15,7 @@
       <%= render 'users/userinfo', user: @user %>
       <%= render 'book', book: @book %>
     </div>
-    <div class="col-md-8">
+    <div class="col-md-8 offset-md-1">
       <h2>Books</h2>
 
       <table class="table table-hover table-inverse">
